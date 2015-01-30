@@ -1,0 +1,213 @@
+\documentclass[11pt,oneside,final,wide]{mwart} 
+
+\usepackage[utf8]{inputenc} 
+\usepackage{polski} 
+\usepackage{iwona} 
+\usepackage{setspace} 
+\usepackage{enumitem} 
+
+\onehalfspacing
+
+\setlength{\parindent}{0pt} 
+\setlist{nolistsep}
+
+\setenumerate[2]{label=(\alph*)} 
+\setenumerate[3]{label=(\roman*)}
+
+\newcommand{\parno}[1]{\S~#1} 
+
+\newcounter{para}
+
+\newenvironment{para}{
+  \refstepcounter{para}
+  \par\medskip\pagebreak[3]
+	{
+  	\centering\textbf{\parno{\arabic{para}}}\par}
+  	\nopagebreak\smallskip
+  	\ignorespaces
+	}
+	
+	{
+  		\par
+	}
+
+\newenvironment{alphenumerate}
+	{
+		\begin{enumerate}[label=(\alph*)]
+  	}{
+  \end{enumerate}
+}
+
+\newcounter{rozdz}
+\newlength{\rozdzfil}
+\setlength{\rozdzfil}{6cm}
+
+\newcommand{\rozdz}[1]
+	{
+		\refstepcounter{rozdz}
+		\par
+  		\vskip 0pt plus \rozdzfil\penalty -200\vskip 0pt plus -\rozdzfil
+  		\bigskip
+  		{
+	  		\centering
+			\large\bfseries
+			Rozdział~\Roman{rozdz}\par\medskip 
+			#1
+			\par
+		}
+		\smallskip
+		\nopagebreak
+	}
+
+\begin{document}
+
+\begin{center}
+	\LARGE
+	Regulamin Stowarzyszenia\\
+	"Stowarzyszenie przyjaciół Fundacji Hackerspace Kraków"\\
+\end{center}
+
+\rozdz{Postanowienia ogólne}
+
+\begin{para}
+  \begin{enumerate}
+  \item Stowarzyszenie nosi nazwę "Stowarzyszenie przyjaciół Fundacji Hackerspace Kraków" i jest zwane dalej stowarzyszeniem.
+  \end{enumerate}
+ \end{para}
+\begin{para}
+ \begin{enumerate} 
+	\item Podstawą działania Stowarzyszenia są przepisy ustawy z dnia 7 kwietnia 1989 r. – Prawo o stowarzyszeniach (tekst jedn. Dz. U. z 2001 r. Nr 79, poz. 855, z późn. zm.) zwanej dalej ustawą, oraz postanowienia niniejszego Regulaminu.
+	\item Stowarzyszenie jest stowarzyszeniem zwykłym w rozumieniu ustawy.
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ Terenem działania stowarzyszenia jest Rzeczypospolita Polska .
+\end{para}
+
+\begin{para}
+ Siedzibą stowarzyszenia jest miasto Kraków.
+\end{para}
+
+\rozdz{Cel i środki działania}
+
+\begin{para}
+ Celem działania stowarzyszenia jest wspieranie fundacji Hackerspace Kraków (KRS 0000436707) zwanej dalej fundacją.
+\end{para}
+
+\begin{para}
+ Stowarzyszenie realizuje swoje cele poprzez:
+ \begin{enumerate}
+\item Wsparcie finansowe fundacji.
+\item Pomoc członków stowarzyszenia podczas warsztatów, prelekcji, konferencji i innych imprez organizowanych przez fundację.
+\item Pozyskiwanie sprzętu, narzędzi, materiałów na rzecz fundacji.
+ \end{enumerate}
+\end{para}
+
+\rozdz{Władze stowarzyszenia}
+
+\begin{para}
+ \begin{enumerate} 
+\item Najwyższą władzą Stowarzyszenia jest Zebranie Członków, które stanowią wszyscy członkowie Stowarzyszenia.
+\item Wyróżnia się zebranie sprawozdawczo-wyborcze, na którym dokonuje się wybór nowego Przestawiciela oraz przstawia się sprawozdanie finansowe i merytoryczne.
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate} 
+ \item Zebranie Członków właściwe jest do podejmowania decyzji we wszystkich sprawach Stowarzyszenia, w których regulamin nie określa właściwych innych władz.
+ \item Do wyłącznych kompetencji Zebrania Członków należą w szczególności:
+  \begin{enumerate}
+   \item wymbór i odwołanie Przedstawiciela stowarzyszenia,
+   \item przyjęcie i uchwalanie zmian Regulaminu,
+   \item kontrola działań podjętych przez Przedstawiciela,
+   \item podjęcie uchwały w sprawie rozwiązania Stowarzyszenia,
+   \item ustalanie wysokości składki członkowskiej,
+   \item rozpatrywanie skarg członków Stowarzyszenia na działalność Przedstawiciela.
+   \item rozpatryzwnie odowłań od wykluczenia z Stowarzyszenia
+  \end{enumerate}
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate} 
+  \item Uchwały Zebrania Członków Stowarzyszenia o ile regulamin nie stanowi inaczej podejmowane są zwykłą większością głosów, przy obecności co najmniej połowy uprawnionych do głosowania członków.
+  \item Uchwała o rozwiązaniu stowarzyszenia, zmiana Regulaminu Stowarzyszenia oraz decyzja o wyborze lub odwołaniu Przestawiciela podejmowana jest przez bezwzględną większość głosów. 
+  \item Członkowie uprawnieni do głosowania muszą zostać powiadomieni najpóźniej 7 dni przed planowanym głosowaniem. Muszą zostać przestawione dwa terminy odległe od siebie co najmniej 30 minut i co najwyżej 2 dni. Zawiadomienie może być za pomocą e-maila, telefonicznie lub listem poleconym.
+  \item W drugim terminie nie jest wymagana połowa 
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ Zgromadzenie Członków zwołuje Przedstawiciel z własnej inicjatywy lub na wniosek co najmniej 1/5 członków Stowarzyszenia.
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item Kadencja Przedstawiciela Stowarzyszenia trwa 12 miesięcy.
+  \item Przestawiciel jest zobowiązany na zwołanie zebrania sprawozdawczo-wyborcze  przed końcem swojej kadencji, na którym zostanie wyłoniony nowy przewodniczący.
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item Do kompetencji Przedstawiciela należy:
+  \begin{enumerate}
+   \item kierowanie bieżącą działalnością stowarzyszenia,
+   \item wykonywanie uchwał Zgromadzenia Członków,
+   \item reprezentowanie Stowarzyszenia na zewnątrz i działanie w jego imieniu
+   \item Przyjmowanie i wykluczanie ze Stowarzyszenia
+  \end{enumerate}
+ \end{enumerate}
+\end{para}
+
+\rozdz{Członkostwo}
+
+\begin{para}
+ \begin{enumerate}
+  \item Członkiem Stowarzyszenia może zostać osoba, który złoży pisemne oświadczenie o przystąpieniu do Stowarzyszenia oraz akceptacji jego Regulaminu.
+  \item O przyjęciu/wykluczeniu ze Stowarzyszenia decyduje Przedstawiciel
+  \item Od decyzji o wyklucznieu możliwe jest odwołanie się do Walego Zebrania Członków
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item Do obowiązków członków Stowarzyszenia należy:
+  \begin{enumerate}
+   \item przestrzeganie Regulaminu Stowarzyszenia,
+   \item terminowe uiszczanie składek członkowskich,
+   \item realizowanie celów Stowarzyszenia.
+  \end{enumerate}
+ \end{enumerate}
+\end{para}
+
+\rozdz{Środki finansowe Stowarzyszenia}
+
+\begin{para}
+ Stowarzyszenie uzyskuje środki na działalność ze składek członkowskich.
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item Środkami finansowymi Stowarzyszenia zarządza Przedstawiciel, zgodnie z obowiązującymi przepisami prawa, niniejszym Regulaminem oraz uchwałami Zgromadzenia Członków.
+ \end{enumerate}
+\end{para}
+
+\rozdz{Postanowienia końcowe}
+
+\begin{para}
+ \begin{enumerate}
+  \item Stowarzyszenie ulega rozwiązaniu na podstawie uchwały Zgromadzenia Członków podjętej w trybie § 10 ust. 3.
+  \item Podejmując uchwałę o rozwiązaniu Stowarzyszenia Zgromadzenie Członków określa przeznaczenie pozostałego majątku Stowarzyszenia.
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item W sprawach nie uregulowanych niniejszym Regulaminem zastosowanie mają przepisy ustawy – Prawo o stowarzyszeniach.
+ \end{enumerate}
+\end{para}
+
+
+\end{document}
