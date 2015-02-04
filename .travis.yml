@@ -1,0 +1,4 @@
+before_script:
+  - sudo apt-get install -y texlive texlive-lang-polish
+script:
+  - pdflatex regulamin.tex 
