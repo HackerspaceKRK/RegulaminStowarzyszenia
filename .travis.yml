@@ -1,4 +1,10 @@
+env:
+  global:
+    - secure: "C+nAxUWXN3gqnk5si3wU7AXE3tA4zy/eUMEIsI9kosBYj27Cn4JBXe79ajQLeDTT6lB7SLI4Jrjwmuf1b1868gZ01EAPRUhT7Q8ikdd0R8uDIjCjReVlETbh/jPSiFT1Paut5WMvFjVSL5vEh5XbXRkSD9k73DK3e76+1HFS4kE=" # FTP_USER
+    -  secure: "aWkwHy0Ox6HXgEg8FINp5bVd5c7ywDLYAxVbB98p4s43dnFNY/x6ZlPhP+aypzI+a21moxSHpMD2zjZmxNHTN/l/uZzZrRV3FiNOkUhKurXk95OA8NC4iPeiVgyrYHDk8Q2DTWXlwTbi7J+uR6pWbKRPtV2mlRR6iCw9Ir1uY7U=" #FTP_PASSWORD
 before_script:
   - sudo apt-get install -y texlive texlive-lang-polish texlive-fonts-extra texlive-latex-extra
 script:
-  - pdflatex regulamin.tex 
+  - pdflatex -halt-on-error regulamin.tex 
+after_success:
+  - curl -1 --ftp-ssl --ftp-create-dirs -T regulamin.pdf -u '$FTP_USER:$FTP_PASSWORD' ftp://web2.mydevil.net:21/dokumenty/
