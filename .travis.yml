@@ -1,4 +1,4 @@
 before_script:
-  - sudo apt-get install -y texlive texlive-lang-polish texlive-fonts-extra
+  - sudo apt-get install -y texlive texlive-lang-polish texlive-fonts-extra texlive-latex-extra
 script:
   - pdflatex regulamin.tex 
