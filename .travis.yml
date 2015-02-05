@@ -7,4 +7,4 @@ before_script:
 script:
   - pdflatex -halt-on-error regulamin.tex 
 after_success:
-  - curl -1 --ftp-ssl --ftp-create-dirs -T regulamin.pdf -u '$FTP_USER:$FTP_PASSWORD' ftp://web2.mydevil.net:21/dokumenty/
+  - curl -1 --ftp-ssl --ftp-create-dirs -T regulamin.pdf -u "$FTP_USER:$FTP_PASSWORD" ftp://web2.mydevil.net:21/dokumenty/
